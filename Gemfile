@@ -1,8 +1,11 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'sinatra'
+gem "sinatra"
+gem "sinatra-contrib"
 
 group :test, :development do
-  gem 'rspec'
-  gem 'guard'
+  gem "rspec"
+  gem "guard"
+  gem "factory_bot"
+  gem "rack-test"
 end
