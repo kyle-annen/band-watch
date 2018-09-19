@@ -1,7 +1,9 @@
-require_relative "../app.rb"
-require "faker"
 require "factory_bot"
+require "faker"
+require "pry"
 require "rack/test"
+
+require_relative "../app.rb"
 
 F = FactoryBot
 
@@ -15,12 +17,12 @@ RSpec.configure do |config|
   config.order = "random"
 
   config.expect_with :rspec do |expectations_config|
-      expectations_config.syntax = %i[expect should]
+    expectations_config.syntax = %i[expect should]
   end
 
   config.mock_with :rspec do |mocks_config|
-      mocks_config.syntax = :should
-        mocks_config.verify_partial_doubles = true
+    mocks_config.syntax = :should
+    mocks_config.verify_partial_doubles = true
   end
 
   config.mock_with :rspec do |mocks|
@@ -28,4 +30,10 @@ RSpec.configure do |config|
   end
 
   config.shared_context_metadata_behavior = :apply_to_host_groups
+
+  config.before(:each) do
+    def app
+      App.new
+    end
+  end
 end

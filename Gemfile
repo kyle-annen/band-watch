@@ -8,4 +8,5 @@ group :test, :development do
   gem "guard"
   gem "factory_bot"
   gem "rack-test"
+  gem "pry"
 end
