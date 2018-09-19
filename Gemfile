@@ -9,4 +9,5 @@ group :test, :development do
   gem "factory_bot"
   gem "rack-test"
   gem "pry"
+  gem "faker"
 end
