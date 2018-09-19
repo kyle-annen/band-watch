@@ -1,9 +1,16 @@
+app_root = File.expand_path(File.join(__dir__, ".."))
+$LOAD_PATH.unshift(app_root) unless $LOAD_PATH.include?(app_root)
+
+ENV["RACK_ENV"] = "test"
+
+require "rubygems"
+require "bundler/setup"
 require "factory_bot"
 require "faker"
 require "pry"
 require "rack/test"
 
-require_relative "../app.rb"
+require "app"
 
 F = FactoryBot
 
