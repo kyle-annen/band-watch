@@ -89,6 +89,7 @@ PLATFORMS
 DEPENDENCIES
   factory_bot
   guard
+  pry
   rack-test
   rspec
   sinatra
