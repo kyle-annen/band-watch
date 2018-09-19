@@ -4,10 +4,10 @@ gem "sinatra"
 gem "sinatra-contrib"
 
 group :test, :development do
-  gem "rspec"
-  gem "guard"
   gem "factory_bot"
-  gem "rack-test"
-  gem "pry"
   gem "faker"
+  gem "guard"
+  gem "pry"
+  gem "rack-test"
+  gem "rspec"
 end
