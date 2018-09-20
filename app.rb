@@ -8,13 +8,10 @@ require "bundler/setup"
 require "sinatra"
 require "sinatra/reloader" if development?
 
-Dir.glob("app/controllers/**/*.rb").each {|f| require f}
+Dir.glob("app/controllers/**/*.rb").each { |f| require f }
 
 class App < Sinatra::Base
-  get "/" do
-    "hello world"
-  end
+  use IndexController
 
-  run! if app_file == $0
+  run! if app_file == $PROGRAM_NAME
 end
-

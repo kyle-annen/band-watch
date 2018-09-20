@@ -1,0 +1,111 @@
+AllCops:
+  TargetRubyVersion: 2.5.1
+  Exclude:
+    - "bin/**/*"
+    - "db/**/*"
+    - "sync/db/**/*"
+    - "tmp/**/*"
+    - "Capfile"
+    - "jira_ticket_maker.rb"
+
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/IndentHash:
+  EnforcedStyle: consistent
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+
+Lint/AssignmentInCondition:
+  Enabled: false
+
+Lint/Void:
+  Exclude:
+    - "smoke_test/**/*"
+    - "spec/**/*"
+
+Metrics/AbcSize:
+  Max: 21
+
+Metrics/BlockLength:
+  Exclude:
+    - "smoke_test/**/*"
+    - "spec/**/*"
+    - "**/Rakefile"
+    - "**/*.rake"
+
+Metrics/LineLength:
+  Max: 150
+
+Metrics/MethodLength:
+  Max: 20
+
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+
+Naming/UncommunicativeMethodParamName:
+  Enabled: false
+
+Performance/RegexpMatch:
+  Enabled: false
+
+Style/BlockDelimiters:
+  EnforcedStyle: braces_for_chaining
+
+Style/BracesAroundHashParameters:
+  EnforcedStyle: context_dependent
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/HashSyntax:
+  EnforcedStyle: hash_rockets
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/MutableConstant:
+  Enabled: false
+
+Style/NilComparison:
+  Exclude:
+    - "smoke_test/**/*"
+    - "spec/**/*"
+
+Style/NumericPredicate:
+  EnforcedStyle: comparison
+
+
+Style/ParallelAssignment:
+  Enabled: false
+
+Style/RescueStandardError:
+  Enabled: false # allow StandardError to be rescued implicitly
+
+Style/SafeNavigation:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/SymbolArray:
+  EnforcedStyle: percent
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/WordArray:
+  EnforcedStyle: percent
