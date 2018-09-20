@@ -1,5 +1,3 @@
 language: ruby
 rvm: 2.5.1
-script:
-  - bin/rspec
-  - bin/rubocop
+script: bin/rspec
