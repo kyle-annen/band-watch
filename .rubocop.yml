@@ -1,5 +1,5 @@
 AllCops:
-  TargetRubyVersion: 2.5.1
+  TargetRubyVersion: 2.5
   Exclude:
     - "bin/**/*"
     - "db/**/*"
@@ -81,7 +81,6 @@ Style/NilComparison:
 
 Style/NumericPredicate:
   EnforcedStyle: comparison
-
 
 Style/ParallelAssignment:
   Enabled: false
