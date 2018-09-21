@@ -1,14 +1,12 @@
 require "spec/spec_helper"
-require "lib/hideout_scrapper"
-require "pry"
-require "ap"
+require "lib/hideout_parser"
 
-describe HideoutScrapper do
+describe HideoutParser do
   it "parses the content" do
     @hideout_content = File.read("spec/mocks/the_hideout.txt")
-    scrapper = HideoutScrapper.new(@hideout_content)
+    content = HideoutParser.new(@hideout_content)
 
-    first_show = scrapper.schedule.first
+    first_show = content.schedule.first
 
     first_show.should include(
       venue: "The Hideout",

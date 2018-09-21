@@ -1,6 +1,6 @@
 require "nokogiri"
 
-class HideoutScrapper
+class HideoutParser
   def initialize(doc)
     @document = Nokogiri::HTML(doc)
   end
