@@ -7,6 +7,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     ast (2.4.0)
+    awesome_print (1.8.0)
     backports (3.11.4)
     coderay (1.1.2)
     concurrent-ruby (1.0.5)
@@ -112,6 +113,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
   factory_bot
   faker
   guard

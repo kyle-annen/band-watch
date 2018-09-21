@@ -1,12 +1,13 @@
 source "https://rubygems.org"
 ruby "2.5.1"
 
+gem "httparty"
+gem "nokogiri"
 gem "sinatra"
 gem "sinatra-contrib"
-gem "nokogiri"
-gem "httparty"
 
 group :test, :development do
+  gem "awesome_print"
   gem "factory_bot"
   gem "faker"
   gem "guard"
