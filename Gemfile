@@ -3,6 +3,8 @@ ruby "2.5.1"
 
 gem "sinatra"
 gem "sinatra-contrib"
+gem "nokogiri"
+gem "httparty"
 
 group :test, :development do
   gem "factory_bot"

@@ -1,0 +1,1716 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:og="https://opengraphprotocol.org/schema/">
+<head profile="http://gmpg.org/xfn/11">
+	<title>Hideout Chicago | Chicago\&#039;s Most Loved Small Venue</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Vw8AUlNACwIBVVNWAQY="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+	<link rel="shortcut icon" href="https://cdn.ticketfly.com/wp-content/themes/hideoutchicago/favicon.ico" />
+	
+	<meta name="description" content="Chicago community live music bar and venue." />
+	<link rel="stylesheet" type="text/css" href="https://cdn.ticketfly.com/wp-content/themes/hideoutchicago/style.css" />
+	<link rel="alternate" type="application/rss+xml" href="https://www.hideoutchicago.com/feed/" title="Hideout Chicago Posts RSS feed" />
+	<link rel="alternate" type="application/rss+xml" href="https://www.hideoutchicago.com/comments/feed/" title="Hideout Chicago Comments RSS feed" />
+	<link rel="pingback" href="https://www.hideoutchicago.com/xmlrpc.php" />
+    <meta name="google-site-verification" content="KXdtz29t4Cudj4dmEDjmBd5YIVZb4ytON2aRk--0cOA" />
+<script>
+dataLayer = [
+	{
+		"tfgaid": "UA-8497099-1"
+	}
+]
+</script>
+<title>Hideout Chicago &#8211; Chicago community live music bar and venue.</title>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TWWLNB');</script>
+<!-- End Google Tag Manager -->
+
+<!-- All in One SEO Pack 2.3.12 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
+<meta name="keywords"  content="hideout, block party, chicago music, the hideout, a day in the country, south by soutwest send off party, SXSW, chicago, saturday dance party" />
+
+<link rel="canonical" href="https://www.hideoutchicago.com/" />
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//s.w.org' />
+
+	<script type="text/javascript">//<![CDATA[
+	// Google Analytics - Ticketfly v1
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-8497099-1']);
+	_gaq.push(['_trackPageview']);
+	_gaq.push(['ec._setAccount', 'UA-6580485-30'],['ec._setDomainName', 'none'],['ec._setAllowLinker', true],['ec._setAllowHash', false],['ec._trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	// End of Google Analytics - Ticketfly
+	//]]></script>
+<link rel="alternate" type="application/rss+xml" href="https://www.ticketfly.com/api/events/upcoming.rss?venueId=843" title="Upcoming Shows RSS feed" />
+<link rel="alternate" type="application/rss+xml" href="https://www.ticketfly.com/api/events/justAnnounced.rss?venueId=843" title="Just Announced Shows RSS feed" />
+<link rel="profile" href="http://microformats.org/profile/hcalendar" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.hideoutchicago.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.10"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.hideoutchicago.com/sitemap.xml" />
+<link rel='stylesheet' id='fbComments_hideWpComments-css'  href='//www.hideoutchicago.com/wp-content/plugins/ticketfly-facebook/css/facebook-comments-hidewpcomments.css?ver=3.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fbComments_displayRsvpCss-css'  href='//www.hideoutchicago.com/wp-content/plugins/ticketfly-facebook/css/facebook-rsvp.css?ver=3.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fbc_rc_widgets-style-css'  href='//www.hideoutchicago.com/wp-content/plugins/ticketfly-facebook/css/facebook-comments-widgets.css?ver=4.7.10' type='text/css' media='all' />
+<link rel='stylesheet' id='tflyStyleSheets-css'  href='https://cdn.ticketfly.com/wp-content/plugins/ticketfly-cms/style.css?ver=1.08.0' type='text/css' media='all' />
+<link rel='stylesheet' id='tflyHideStyleSheets-css'  href='https://cdn.ticketfly.com/wp-content/plugins/ticketfly-cms/css/tfly-hide.css?ver=1.00' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery.lightbox.min.css-css'  href='https://cdn.ticketfly.com/wp-content/plugins/wp-jquery-lightbox/styles/lightbox.min.css?ver=1.4.6' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var TflyFBAjax = {"ajaxurl":"\/\/www.hideoutchicago.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://cdn.ticketfly.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://cdn.ticketfly.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://cdn.ticketfly.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://cdn.ticketfly.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://cdn.ticketfly.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://cdn.ticketfly.com/wp-includes/js/jquery/ui/resizable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://cdn.ticketfly.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://cdn.ticketfly.com/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://cdn.ticketfly.com/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://cdn.ticketfly.com/wp-includes/js/jquery/ui/dialog.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://cdn.ticketfly.com/wp-content/plugins/ticketfly-cms/js/tfly.js?ver=1.5.3'></script>
+<link rel='https://api.w.org/' href='https://www.hideoutchicago.com/wp-json/' />
+<link rel="alternate" type="application/json+oembed" href="https://www.hideoutchicago.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hideoutchicago.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.hideoutchicago.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hideoutchicago.com%2F&#038;format=xml" />
+<meta property='og:title' content='Hideout Chicago' />
+<meta property='og:site_name' content='Hideout Chicago' />
+<meta property='og:url' content='https://www.hideoutchicago.com/' />
+<meta property='og:type' content='website' />
+<meta property='fb:app_id' content='188784904507300' />
+<!-- Vipers Video Quicktags v6.5.2 | http://www.viper007bond.com/wordpress-plugins/vipers-video-quicktags/ -->
+<style type="text/css">
+.vvqbox { display: block; max-width: 100%; visibility: visible !important; margin: 10px auto; } .vvqbox img { max-width: 100%; height: 100%; } .vvqbox object { max-width: 100%; } 
+</style>
+<script type="text/javascript">
+// <![CDATA[
+	var vvqflashvars = {};
+	var vvqparams = { wmode: "opaque", allowfullscreen: "true", allowscriptaccess: "always" };
+	var vvqattributes = {};
+	var vvqexpressinstall = "https://www.hideoutchicago.com/wp-content/plugins/vipers-video-quicktags/resources/expressinstall.swf";
+// ]]>
+</script>
+
+</head>
+<body>
+<div id="wrapper" class="hfeed">
+
+	<div id="header">
+		<div id="venue-name">
+			<h1><a href="https://www.hideoutchicago.com/" title="Hideout Chicago">Hideout Chicago</a></h1>
+		</div>
+  	</div><!--  #header -->
+
+	<div id="nav">		
+			<div class="menu-main-container"><ul id="menu-main" class="menu"><li id="menu-item-4765" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4765"><a href="https://www.hideoutchicago.com/calendar/">Calendar</a></li>
+<li id="menu-item-4757" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4757"><a href="https://www.hideoutchicago.com/news/">News</a></li>
+<li id="menu-item-4759" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4759"><a href="https://www.hideoutchicago.com/booking/">Booking</a></li>
+<li id="menu-item-4767" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4767"><a href="https://www.hideoutchicago.com/history/">History</a></li>
+<li id="menu-item-4763" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4763"><a href="https://www.hideoutchicago.com/location/">Location</a></li>
+<li id="menu-item-4755" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4755"><a href="https://www.hideoutchicago.com/contact/">Contact</a></li>
+<li id="menu-item-4761" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-4761"><a href="https://www.hideoutchicago.com/">Home</a></li>
+</ul></div>		
+	</div>
+<div id="topbar">
+
+	<ul>
+
+		<li id="text-3" class="widget widget_text">			<div class="textwidget">
+
+		<script type="text/javascript">
+			tflyMaxCarousel = 4;
+		</script>
+
+		<div id="tfly-featured-events">
+			<ul class="images">
+						
+      		<li class="tfly-event-id-1681524 tfly-org-id-345 tfly-venue-id-843"><a href="/event/1681524-martin-bisi-chicago/">
+
+                                    <img src="https://image-ticketfly.imgix.net/00/02/88/50/80-og.JPG?w=500&h=334&fit=crop&crop=top" title="Martin Bisi" alt="Martin Bisi" />
+                                </a></li>
+
+							
+      		<li class="tfly-event-id-1669824 tfly-org-id-345 tfly-venue-id-843"><a href="/event/1669824-picnics-on-porch-jake-chicago/">
+
+                                    <img src="https://image-ticketfly.imgix.net/00/02/91/82/77-og.jpg?w=500&h=334&fit=crop&crop=top" title="Picnics on the Porch | Jake Xerxes Fussell, James Elkington" alt="Picnics on the Porch | Jake Xerxes Fussell, James Elkington" />
+                                </a></li>
+
+							
+      		<li class="tfly-event-id-1694174 tfly-org-id-345 tfly-venue-id-843"><a href="/event/1694174-jackie-cohen-chicago/">
+
+                                    <img src="https://image-ticketfly.imgix.net/00/02/92/28/60-og.jpg?w=500&h=334&fit=crop&crop=top" title="Jackie Cohen" alt="Jackie Cohen" />
+                                </a></li>
+
+							
+      		<li class="tfly-event-id-1694054 tfly-org-id-345 tfly-venue-id-843"><a href="/event/1694054-picnics-on-porch-other-chicago/">
+
+                                    <img src="https://image-ticketfly.imgix.net/00/02/91/82/77-og.jpg?w=500&h=334&fit=crop&crop=top" title="Picnics on the Porch | The Other Years" alt="Picnics on the Porch | The Other Years" />
+                                </a></li>
+
+				
+			</ul>
+
+			<ul id="overlay-content">
+							<li id="overlay-0" class="tfly-event-id-1681524 tfly-org-id-345 tfly-venue-id-843">
+					<h1 class="headliners"><a href="/event/1681524-martin-bisi-chicago/">Martin Bisi</a></h1>
+					<h2 class="date-venue">Mon 7/02											<span class="venue location"> - The Hideout</span>
+					</h2>
+                 					<h3 class="ticket-link"><a href="https://www.ticketfly.com/purchase/event/1681524" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+                    				</li>
+											<li id="overlay-1" class="tfly-event-id-1669824 tfly-org-id-345 tfly-venue-id-843">
+					<h1 class="headliners"><a href="/event/1669824-picnics-on-porch-jake-chicago/">Picnics on the Porch | Jake Xerxes Fusse...</a></h1>
+					<h2 class="date-venue">Fri 7/06											<span class="venue location"> - The Hideout</span>
+					</h2>
+                 					<h3 class="ticket-link"><a href="https://www.ticketfly.com/purchase/event/1669824" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+                    				</li>
+											<li id="overlay-2" class="tfly-event-id-1694174 tfly-org-id-345 tfly-venue-id-843">
+					<h1 class="headliners"><a href="/event/1694174-jackie-cohen-chicago/">Jackie Cohen</a></h1>
+					<h2 class="date-venue">Wed 7/18											<span class="venue location"> - The Hideout</span>
+					</h2>
+                 					<h3 class="ticket-link"><a href="https://www.ticketfly.com/purchase/event/1694174" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+                    				</li>
+											<li id="overlay-3" class="tfly-event-id-1694054 tfly-org-id-345 tfly-venue-id-843">
+					<h1 class="headliners"><a href="/event/1694054-picnics-on-porch-other-chicago/">Picnics on the Porch | The Other Years</a></h1>
+					<h2 class="date-venue">Fri 7/20											<span class="venue location"> - The Hideout</span>
+					</h2>
+                 					<h3 class="ticket-link"><a href="https://www.ticketfly.com/purchase/event/1694054" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+                    				</li>
+										</ul>
+
+			<div id="grey-back"></div>
+			<div id="overlay">
+				<div class="change">
+					<h1 class="headliners"><a href="/event/1681524-martin-bisi-chicago/">Martin Bisi</a></h1>
+					<h2 class="date-venue">Mon 7/02										<span class="venue location"> - The Hideout</span>
+					</h2>
+                 					<h3 class="ticket-link"><a href="https://www.ticketfly.com/purchase/event/1681524" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+                    				</div>
+								<ul class="nav">
+				</ul>
+							</div>
+		</div>
+<script type="text/javascript">
+    var carousel;
+    jQuery( document ).ready( function() { carousel = new tfly.carousel(); } );
+</script>
+</div>
+		</li>
+	</ul>
+	
+	<ul class="just-announced-div">
+		
+		<li id="text-4" class="widget widget_text"><h3 class='widgettitle'>Just Announced</h3>
+			<div class="textwidget">
+		<div class="sidebar-list just-announced">
+							<ul>
+								<li class="tfly-event-id-1717655 tfly-org-id-345 tfly-venue-id-843"><a href="/event/1717655-sean-rowe-chicago/">Sean Rowe - 9/29																                </a></li>
+								<li class="tfly-event-id-1725296 tfly-org-id-345 tfly-venue-id-843"><a href="/event/1725296-sadies-chicago/">The Sadies - 8/06																                </a></li>
+								<li class="tfly-event-id-1725553 tfly-org-id-345 tfly-venue-id-843"><a href="/event/1725553-blueberry-tour-chicago/">The BlueBerry Tour - 8/10																                </a></li>
+								<li class="tfly-event-id-1721966 tfly-org-id-345 tfly-venue-id-843"><a href="/event/1721966-blueberry-tour-chicago/">The BlueBerry Tour - 8/10																                </a></li>
+								<li class="tfly-event-id-1722966 tfly-org-id-345 tfly-venue-id-843"><a href="/event/1722966-valley-queen-chicago/">Valley Queen - 10/10																                </a></li>
+								<li class="tfly-event-id-1721744 tfly-org-id-345 tfly-venue-id-843"><a href="/event/1721744-advance-base-chicago/">Advance Base - 10/17																                </a></li>
+								<li class="tfly-event-id-1722034 tfly-org-id-345 tfly-venue-id-843"><a href="/event/1722034-ava-luna-chicago/">Ava Luna - 9/16																                </a></li>
+								<li class="tfly-event-id-1717371 tfly-org-id-345 tfly-venue-id-843"><a href="/event/1717371-guerilla-toss-chicago/">Guerilla Toss - 9/22																                </a></li>
+								<li class="tfly-event-id-1722030 tfly-org-id-345 tfly-venue-id-843"><a href="/event/1722030-yawpers-chicago/">The Yawpers - 9/15																                </a></li>
+								<li class="tfly-event-id-1707237 tfly-org-id-345 tfly-venue-id-843"><a href="/event/1707237-eric-bachmann-chicago/">Eric Bachmann - 10/13																                </a></li>
+							</ul>
+            		</div>
+</div>
+		</li>
+		
+	</ul>
+
+</div>
+
+
+<div id="main">
+	
+	<div id="content" class="twocolumn floatleft">
+
+			
+		<div id="post-8" >
+	
+			<div class="entry-content">
+
+				<div class="list-view">
+	  <div class="list-view-heading">      <h2 class="list-view-title">Upcoming Shows</h2>             <h2 class="calendar-link">
+				<a class="calendar" href="/calendar/">View Calendar</a></h2></div>
+    <div class="list-view-item tfly-event-id-1706883 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1706883-domeheads-attack-alan-ford-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/90/46/76-og.jpg?w=100&h=125" width="100" height="125" alt="Domeheads Attack w/Alan Ford Giles" title="Domeheads Attack w/Alan Ford Giles" /></a>
+      <div class="list-view-details vevent">
+<h1 class="headliners summary"><a href="/event/1706883-domeheads-attack-alan-ford-chicago/">Domeheads Attack w/Alan Ford Giles</a></h1><h2 class="supports description"><a href=" /event/1706883-domeheads-attack-alan-ford-chicago/ ">George David Elrod, Annie Sullivan, Max Lazerine, Manuela Mendoza, Aidan O'Connor, Seth Arthur Johnson, Laura Mulcahy, Damian Anaya</a></h2>        <h2 class="dates">Mon 7/02</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-02T19:00:00-05:00"></span>7:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1706883-domeheads-attack-alan-ford-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1706883" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $7.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1681524 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1681524-martin-bisi-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/88/50/80-og.JPG?w=100&h=66" width="100" height="66" alt="Martin Bisi" title="Martin Bisi" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1681524-martin-bisi-chicago/">Martin Bisi</a></h1>
+					  <h2 class="supports description"><a href=" /event/1681524-martin-bisi-chicago/ ">ONO, Secret Means of Escape</a></h2>        <h2 class="dates">Mon 7/02</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-02T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1681524-martin-bisi-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1681524" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1706874 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1706874-devil-in-woodpile-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/87/29/00-og.jpg?w=100&h=154" width="100" height="154" alt="Devil In A Woodpile" title="Devil In A Woodpile" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1706874-devil-in-woodpile-chicago/">Devil In A Woodpile</a></h1>
+					          <h2 class="dates">Thu 7/05</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-05T18:00:00-05:00"></span>6:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1706874-devil-in-woodpile-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 $5 at the Door       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1707020 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1707020-bethany-thomas-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/92/93/95-og.jpg?w=100&h=103" width="100" height="103" alt="Bethany Thomas" title="Bethany Thomas" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1707020-bethany-thomas-chicago/">Bethany Thomas</a></h1>
+					  <h2 class="supports description"><a href=" /event/1707020-bethany-thomas-chicago/ ">Brett Axell of Acres to Miles</a></h2>        <h2 class="dates">Thu 7/05</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-05T20:00:00-05:00"></span>8:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1707020-bethany-thomas-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1707020" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1669824 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1669824-picnics-on-porch-jake-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/91/82/77-og.jpg?w=100&h=133" width="100" height="133" alt="Picnics on the Porch | Jake Xerxes Fussell, James Elkington" title="Picnics on the Porch | Jake Xerxes Fussell, James Elkington" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">The Hideout and Deep Eddy Vodka present:</h2><h1 class="headliners summary"><a href="/event/1669824-picnics-on-porch-jake-chicago/">Picnics on the Porch | Jake Xerxes Fussell, James Elkington</a></h1>        <h2 class="dates">Fri 7/06</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-06T18:00:00-05:00"></span>6:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1669824-picnics-on-porch-jake-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1669824" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1693221 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1693221-roommate-health-beauty-big-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/95/79/47-og.jpg?w=100&h=129" width="100" height="129" alt="Roommate, Health&amp;Beauty, Big Syn" title="Roommate, Health&amp;Beauty, Big Syn" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1693221-roommate-health-beauty-big-chicago/">Roommate</a></h1>
+					   <h1 class="headliners"><a href="/event/1693221-roommate-health-beauty-big-chicago/">Health&Beauty</a></h1>
+					   <h1 class="headliners"><a href="/event/1693221-roommate-health-beauty-big-chicago/">Big Syn</a></h1>
+					          <h2 class="dates">Fri 7/06</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-06T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1693221-roommate-health-beauty-big-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1693221" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $8.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1697283 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1697283-brad-cole-chicago/"><img src="https://image-ticketfly.imgix.net/00/01/92/47/75-og.JPG?w=100&h=73" width="100" height="73" alt="Brad Cole" title="Brad Cole" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1697283-brad-cole-chicago/">Brad Cole</a></h1>
+					  <h2 class="supports description"><a href=" /event/1697283-brad-cole-chicago/ ">Doug Lambert</a></h2>        <h2 class="dates">Sat 7/07</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-07T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1697283-brad-cole-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1697283" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $12.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1714964 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1714964-gone-fishin-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/94/39/72-og.jpg?w=100&h=66" width="100" height="66" alt="Gone Fishin&#039;" title="Gone Fishin&#039;" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1714964-gone-fishin-chicago/">Gone Fishin'</a></h1>
+					          <h2 class="dates">Sun 7/08</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-08T12:00:00-05:00"></span>12:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1714964-gone-fishin-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 coupla' worms, a hook, and some string       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1714965 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1714965-gone-fishin-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/94/39/72-og.jpg?w=100&h=66" width="100" height="66" alt="Gone Fishin&#039;" title="Gone Fishin&#039;" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1714965-gone-fishin-chicago/">Gone Fishin'</a></h1>
+					          <h2 class="dates">Mon 7/09</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-09T12:00:00-05:00"></span>12:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1714965-gone-fishin-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 coupla' worms, a hook, and some string       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1714966 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1714966-gone-fishin-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/94/39/72-og.jpg?w=100&h=66" width="100" height="66" alt="Gone Fishin&#039;" title="Gone Fishin&#039;" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1714966-gone-fishin-chicago/">Gone Fishin'</a></h1>
+					          <h2 class="dates">Tue 7/10</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-10T12:00:00-05:00"></span>12:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1714966-gone-fishin-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 coupla' worms, a hook, and some string       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1714971 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1714971-gone-fishin-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/94/39/72-og.jpg?w=100&h=66" width="100" height="66" alt="Gone Fishin&#039;" title="Gone Fishin&#039;" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1714971-gone-fishin-chicago/">Gone Fishin'</a></h1>
+					          <h2 class="dates">Wed 7/11</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-11T12:00:00-05:00"></span>12:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1714971-gone-fishin-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 coupla' worms, a hook, and some string       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1714972 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1714972-gone-fishin-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/94/39/72-og.jpg?w=100&h=66" width="100" height="66" alt="Gone Fishin&#039;" title="Gone Fishin&#039;" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1714972-gone-fishin-chicago/">Gone Fishin'</a></h1>
+					          <h2 class="dates">Thu 7/12</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-12T12:00:00-05:00"></span>12:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1714972-gone-fishin-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 coupla' worms, a hook, and some string       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1714974 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1714974-gone-fishin-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/94/39/72-og.jpg?w=100&h=66" width="100" height="66" alt="Gone Fishin&#039;" title="Gone Fishin&#039;" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1714974-gone-fishin-chicago/">Gone Fishin'</a></h1>
+					          <h2 class="dates">Fri 7/13</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-13T12:00:00-05:00"></span>12:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1714974-gone-fishin-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 coupla' worms, a hook, and some string       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1714975 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1714975-gone-fishin-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/94/39/72-og.jpg?w=100&h=66" width="100" height="66" alt="Gone Fishin&#039;" title="Gone Fishin&#039;" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1714975-gone-fishin-chicago/">Gone Fishin'</a></h1>
+					          <h2 class="dates">Sat 7/14</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-14T12:00:00-05:00"></span>12:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1714975-gone-fishin-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 coupla' worms, a hook, and some string       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1711768 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1711768-clickhole-live-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/90/46/76-og.jpg?w=100&h=125" width="100" height="125" alt="ClickHole Live!" title="ClickHole Live!" /></a>
+      <div class="list-view-details vevent">
+<h1 class="headliners summary"><a href="/event/1711768-clickhole-live-chicago/">ClickHole Live!</a></h1>        <h2 class="dates">Mon 7/16</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-16T19:00:00-05:00"></span>7:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1711768-clickhole-live-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1711768" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $7.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1725549 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1725549-weeds-poetry-open-mic-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/61/57/17-og.jpg?w=100&h=100" width="100" height="100" alt="Weeds Poetry Open Mic" title="Weeds Poetry Open Mic" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1725549-weeds-poetry-open-mic-chicago/">Weeds Poetry Open Mic</a></h1>
+					          <h2 class="dates">Mon 7/16</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-16T21:30:00-05:00"></span>9:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1725549-weeds-poetry-open-mic-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 Donations welcome       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1684524 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1684524-sam-moss-minor-moon-her-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/89/08/91-og.jpg?w=100&h=66" width="100" height="66" alt="Sam Moss, Minor Moon, Her Crooked Heart" title="Sam Moss, Minor Moon, Her Crooked Heart" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1684524-sam-moss-minor-moon-her-chicago/">Sam Moss</a></h1>
+					   <h1 class="headliners"><a href="/event/1684524-sam-moss-minor-moon-her-chicago/">Minor Moon</a></h1>
+					   <h1 class="headliners"><a href="/event/1684524-sam-moss-minor-moon-her-chicago/">Her Crooked Heart</a></h1>
+					          <h2 class="dates">Tue 7/17</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-17T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1684524-sam-moss-minor-moon-her-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1684524" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1718023 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1718023-hideout-veggie-bingo-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/90/09/91-og.jpg?w=100&h=133" width="100" height="133" alt="Hideout Veggie Bingo" title="Hideout Veggie Bingo" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">NeighborSpace, The Hideout, and Soup & Bread present:</h2><h1 class="headliners summary"><a href="/event/1718023-hideout-veggie-bingo-chicago/">Hideout Veggie Bingo</a></h1><h2 class="supports description"><a href=" /event/1718023-hideout-veggie-bingo-chicago/ ">David Kodeski (Boy Girl Boy Girl) and Edward Thomas-Herrera (Neo Futurists alum), McKinley Community Play Garden</a></h2>        <h2 class="dates">Wed 7/18</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-18T17:30:00-05:00"></span>5:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1718023-hideout-veggie-bingo-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 Cards are $4 each, or 3 for $10       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1694174 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1694174-jackie-cohen-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/92/28/60-og.jpg?w=100&h=66" width="100" height="66" alt="Jackie Cohen" title="Jackie Cohen" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1694174-jackie-cohen-chicago/">Jackie Cohen</a></h1>
+					  <h2 class="supports description"><a href=" /event/1694174-jackie-cohen-chicago/ ">Jungle Green, Baby Blue</a></h2>        <h2 class="dates">Wed 7/18</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-18T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1694174-jackie-cohen-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1694174" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1706875 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1706875-devil-in-woodpile-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/87/29/00-og.jpg?w=100&h=154" width="100" height="154" alt="Devil In A Woodpile" title="Devil In A Woodpile" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1706875-devil-in-woodpile-chicago/">Devil In A Woodpile</a></h1>
+					          <h2 class="dates">Thu 7/19</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-19T18:00:00-05:00"></span>6:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1706875-devil-in-woodpile-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 $5 at the Door       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1706793 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1706793-mar-caribe-paul-fonfara-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/92/90/27-og.jpg?w=100&h=67" width="100" height="67" alt="Mar Caribe, Paul Fonfara (Painted Saints), The Pillowhammer" title="Mar Caribe, Paul Fonfara (Painted Saints), The Pillowhammer" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1706793-mar-caribe-paul-fonfara-chicago/">Mar Caribe</a></h1>
+					   <h1 class="headliners"><a href="/event/1706793-mar-caribe-paul-fonfara-chicago/">Paul Fonfara (Painted Saints)</a></h1>
+					   <h1 class="headliners"><a href="/event/1706793-mar-caribe-paul-fonfara-chicago/">The Pillowhammer</a></h1>
+					          <h2 class="dates">Thu 7/19</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-19T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1706793-mar-caribe-paul-fonfara-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1706793" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $8.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1694054 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1694054-picnics-on-porch-other-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/91/82/77-og.jpg?w=100&h=133" width="100" height="133" alt="Picnics on the Porch | The Other Years" title="Picnics on the Porch | The Other Years" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">The Hideout and Deep Eddy Vodka present:</h2><h1 class="headliners summary"><a href="/event/1694054-picnics-on-porch-other-chicago/">Picnics on the Porch | The Other Years</a></h1>        <h2 class="dates">Fri 7/20</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-20T18:00:00-05:00"></span>6:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1694054-picnics-on-porch-other-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1694054" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1719968 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1719968-pitchfork-music-festival-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/95/31/41-og.jpg?w=100&h=155" width="100" height="155" alt="Pitchfork Music Festival aftershow featuring The Curls" title="Pitchfork Music Festival aftershow featuring The Curls" /></a>
+      <div class="list-view-details vevent">
+<h1 class="headliners summary"><a href="/event/1719968-pitchfork-music-festival-chicago/">Pitchfork Music Festival aftershow featuring The Curls</a></h1><h2 class="supports description"><a href=" /event/1719968-pitchfork-music-festival-chicago/ ">Deeper, Wei Zhongle</a></h2>        <h2 class="dates">Fri 7/20</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-20T22:00:00-05:00"></span>10:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1719968-pitchfork-music-festival-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1719968" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1719245 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1719245-truckstop-honeymoon-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/95/13/05-og.jpg?w=100&h=72" width="100" height="72" alt="Truckstop Honeymoon" title="Truckstop Honeymoon" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1719245-truckstop-honeymoon-chicago/">Truckstop Honeymoon</a></h1>
+					  <h2 class="supports description"><a href=" /event/1719245-truckstop-honeymoon-chicago/ ">Eddy Green</a></h2>        <h2 class="dates">Sat 7/21</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-21T19:00:00-05:00"></span>7:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1719245-truckstop-honeymoon-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1719245" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1719236 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1719236-helltrap-nightmare-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/95/50/49-og.jpg?w=100&h=154" width="100" height="154" alt="HELLTRAP NIGHTMARE" title="HELLTRAP NIGHTMARE" /></a>
+      <div class="list-view-details vevent">
+<h1 class="headliners summary"><a href="/event/1719236-helltrap-nightmare-chicago/">HELLTRAP NIGHTMARE</a></h1><h2 class="supports description"><a href=" /event/1719236-helltrap-nightmare-chicago/ ">The Shrimp Boys, Scott Egleston, Lukey Walden, Marcia Custer</a></h2>        <h2 class="dates">Sat 7/21</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-21T22:00:00-05:00"></span>10:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1719236-helltrap-nightmare-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1719236" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1706877 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1706877-clark-street-jams-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/90/47/03-og.jpg?w=100&h=118" width="100" height="118" alt="Clark Street Jams" title="Clark Street Jams" /></a>
+      <div class="list-view-details vevent">
+<h1 class="headliners summary"><a href="/event/1706877-clark-street-jams-chicago/">Clark Street Jams</a></h1>        <h2 class="dates">Sat 7/21</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-21T23:59:00-05:00"></span>11:59 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1706877-clark-street-jams-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 $5 at the Door       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1711763 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1711763-bad-girls-choir-grace-thomas-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/90/46/76-og.jpg?w=100&h=125" width="100" height="125" alt="Bad Girls Choir w/Grace Thomas &amp; Jessye McGarry" title="Bad Girls Choir w/Grace Thomas &amp; Jessye McGarry" /></a>
+      <div class="list-view-details vevent">
+<h1 class="headliners summary"><a href="/event/1711763-bad-girls-choir-grace-thomas-chicago/">Bad Girls Choir w/Grace Thomas & Jessye McGarry</a></h1>        <h2 class="dates">Mon 7/23</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-23T19:00:00-05:00"></span>7:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1711763-bad-girls-choir-grace-thomas-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1711763" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $7.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1725550 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1725550-weeds-poetry-open-mic-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/61/57/17-og.jpg?w=100&h=100" width="100" height="100" alt="Weeds Poetry Open Mic" title="Weeds Poetry Open Mic" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1725550-weeds-poetry-open-mic-chicago/">Weeds Poetry Open Mic</a></h1>
+					          <h2 class="dates">Mon 7/23</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-23T21:30:00-05:00"></span>9:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1725550-weeds-poetry-open-mic-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 Donations welcome       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1695344 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1695344-donkeys-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/91/03/69-og.jpg?w=100&h=150" width="100" height="150" alt="The Donkeys" title="The Donkeys" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1695344-donkeys-chicago/">The Donkeys</a></h1>
+					  <h2 class="supports description"><a href=" /event/1695344-donkeys-chicago/ ">Thompson Springs, The Singleman Affair</a></h2>        <h2 class="dates">Tue 7/24</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-24T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1695344-donkeys-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1695344" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1718024 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1718024-hideout-veggie-bingo-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/90/09/91-og.jpg?w=100&h=133" width="100" height="133" alt="Hideout Veggie Bingo" title="Hideout Veggie Bingo" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">NeighborSpace, The Hideout, and Soup & Bread present:</h2><h1 class="headliners summary"><a href="/event/1718024-hideout-veggie-bingo-chicago/">Hideout Veggie Bingo</a></h1><h2 class="supports description"><a href=" /event/1718024-hideout-veggie-bingo-chicago/ ">Shark Week: Kate Golembiewski & Kevin Feldheim of the Field Museum, Fulton Flower and Vegetable Garden of Garfield Park</a></h2>        <h2 class="dates">Wed 7/25</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-25T17:30:00-05:00"></span>5:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1718024-hideout-veggie-bingo-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 Cards are $4 each, or 3 for $10       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1719168 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1719168-mr-mrs-wednesday-night-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/73/71/04-og.jpg?w=100&h=100" width="100" height="100" alt="Mr. and Mrs. Wednesday Night" title="Mr. and Mrs. Wednesday Night" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1719168-mr-mrs-wednesday-night-chicago/">Mr. and Mrs. Wednesday Night</a></h1>
+					          <h2 class="dates">Wed 7/25</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-25T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1719168-mr-mrs-wednesday-night-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1719168" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $7.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1706876 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1706876-devil-in-woodpile-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/87/29/00-og.jpg?w=100&h=154" width="100" height="154" alt="Devil In A Woodpile" title="Devil In A Woodpile" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1706876-devil-in-woodpile-chicago/">Devil In A Woodpile</a></h1>
+					          <h2 class="dates">Thu 7/26</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-26T18:00:00-05:00"></span>6:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1706876-devil-in-woodpile-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 $5 at the Door       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1715806 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1715806-gia-margaret-theres-always-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/95/09/61-og.JPG?w=100&h=66" width="100" height="66" alt="Gia Margaret &quot;There&#039;s Always Glimmer&quot; Record Release" title="Gia Margaret &quot;There&#039;s Always Glimmer&quot; Record Release" /></a>
+      <div class="list-view-details vevent">
+<h1 class="headliners summary"><a href="/event/1715806-gia-margaret-theres-always-chicago/">Gia Margaret "There's Always Glimmer" Record Release</a></h1><h2 class="supports description"><a href=" /event/1715806-gia-margaret-theres-always-chicago/ ">Advance Base, Brendan Losch</a></h2>        <h2 class="dates">Thu 7/26</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-26T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1715806-gia-margaret-theres-always-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1715806" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1694057 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1694057-picnics-on-porch-jack-klatt-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/91/82/77-og.jpg?w=100&h=133" width="100" height="133" alt="Picnics on the Porch | Jack Klatt" title="Picnics on the Porch | Jack Klatt" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">The Hideout and Deep Eddy Vodka present:</h2><h1 class="headliners summary"><a href="/event/1694057-picnics-on-porch-jack-klatt-chicago/">Picnics on the Porch | Jack Klatt</a></h1>        <h2 class="dates">Fri 7/27</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-27T18:00:00-05:00"></span>6:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1694057-picnics-on-porch-jack-klatt-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1694057" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1718003 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1718003-nora-petran-curt-oren-ko-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/94/92/86-og.jpg?w=100&h=64" width="100" height="64" alt="Nora Petran, Curt Oren, KO, Annalibera" title="Nora Petran, Curt Oren, KO, Annalibera" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1718003-nora-petran-curt-oren-ko-chicago/">Nora Petran</a></h1>
+					   <h1 class="headliners"><a href="/event/1718003-nora-petran-curt-oren-ko-chicago/">Curt Oren</a></h1>
+					   <h1 class="headliners"><a href="/event/1718003-nora-petran-curt-oren-ko-chicago/">KO</a></h1>
+					   <h1 class="headliners"><a href="/event/1718003-nora-petran-curt-oren-ko-chicago/">Annalibera</a></h1>
+					          <h2 class="dates">Fri 7/27</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-27T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1718003-nora-petran-curt-oren-ko-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1718003" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $8.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1698622 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1698622-resonance-series-greg-fox-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/91/58/81-og.jpg?w=100&h=66" width="100" height="66" alt="Resonance Series: Greg Fox" title="Resonance Series: Greg Fox" /></a>
+      <div class="list-view-details vevent">
+<h1 class="headliners summary"><a href="/event/1698622-resonance-series-greg-fox-chicago/">Resonance Series: Greg Fox</a></h1><h2 class="supports description"><a href=" /event/1698622-resonance-series-greg-fox-chicago/ ">HUJO</a></h2>        <h2 class="dates">Sat 7/28</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-28T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1698622-resonance-series-greg-fox-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1698622" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1706884 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1706884-hideout-stand-up-showcase-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/90/46/76-og.jpg?w=100&h=125" width="100" height="125" alt="Hideout Stand-Up Showcase" title="Hideout Stand-Up Showcase" /></a>
+      <div class="list-view-details vevent">
+<h1 class="headliners summary"><a href="/event/1706884-hideout-stand-up-showcase-chicago/">Hideout Stand-Up Showcase</a></h1>        <h2 class="dates">Mon 7/30</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-30T19:00:00-05:00"></span>7:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1706884-hideout-stand-up-showcase-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1706884" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $7.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1725551 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1725551-weeds-poetry-open-mic-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/61/57/17-og.jpg?w=100&h=100" width="100" height="100" alt="Weeds Poetry Open Mic" title="Weeds Poetry Open Mic" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1725551-weeds-poetry-open-mic-chicago/">Weeds Poetry Open Mic</a></h1>
+					          <h2 class="dates">Mon 7/30</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-07-30T21:30:00-05:00"></span>9:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1725551-weeds-poetry-open-mic-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 Donations welcome       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1718025 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1718025-hideout-veggie-bingo-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/90/09/91-og.jpg?w=100&h=133" width="100" height="133" alt="Hideout Veggie Bingo" title="Hideout Veggie Bingo" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">NeighborSpace, The Hideout, and Soup & Bread present:</h2><h1 class="headliners summary"><a href="/event/1718025-hideout-veggie-bingo-chicago/">Hideout Veggie Bingo</a></h1><h2 class="supports description"><a href=" /event/1718025-hideout-veggie-bingo-chicago/ ">The Girl Talk's Jen Sabella & Erika Wozniak, South Chicago's People Park, Artist's Garden, Bush Community Gardens</a></h2>        <h2 class="dates">Wed 8/01</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-01T17:30:00-05:00"></span>5:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1718025-hideout-veggie-bingo-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 Cards are $4 each, or 3 for $10       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1717239 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1717239-material-girls-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/94/80/38-og.jpg?w=100&h=66" width="100" height="66" alt="Material Girls" title="Material Girls" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1717239-material-girls-chicago/">Material Girls</a></h1>
+					  <h2 class="supports description"><a href=" /event/1717239-material-girls-chicago/ ">GOSH!, Head</a></h2>        <h2 class="dates">Wed 8/01</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-01T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1717239-material-girls-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1717239" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $8.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1725543 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1725543-devil-in-woodpile-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/87/29/00-og.jpg?w=100&h=154" width="100" height="154" alt="Devil In A Woodpile" title="Devil In A Woodpile" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1725543-devil-in-woodpile-chicago/">Devil In A Woodpile</a></h1>
+					          <h2 class="dates">Thu 8/02</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-02T18:00:00-05:00"></span>6:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1725543-devil-in-woodpile-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 $5 at the Door       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1694066 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1694066-picnics-on-porch-kath-bloom-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/91/82/77-og.jpg?w=100&h=133" width="100" height="133" alt="Picnics on the Porch | Kath Bloom" title="Picnics on the Porch | Kath Bloom" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">The Hideout and Deep Eddy Vodka present:</h2><h1 class="headliners summary"><a href="/event/1694066-picnics-on-porch-kath-bloom-chicago/">Picnics on the Porch | Kath Bloom</a></h1>        <h2 class="dates">Fri 8/03</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-03T18:00:00-05:00"></span>6:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1694066-picnics-on-porch-kath-bloom-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1694066" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1708101 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1708101-clearance-your-leisure-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/93/26/46-og.JPG?w=100&h=83" width="100" height="83" alt="Clearance &quot;At Your Leisure&quot; Record Release" title="Clearance &quot;At Your Leisure&quot; Record Release" /></a>
+      <div class="list-view-details vevent">
+<h1 class="headliners summary"><a href="/event/1708101-clearance-your-leisure-chicago/">Clearance "At Your Leisure" Record Release</a></h1><h2 class="supports description"><a href=" /event/1708101-clearance-your-leisure-chicago/ ">Deeper</a></h2>        <h2 class="dates">Fri 8/03</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-03T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1708101-clearance-your-leisure-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1708101" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $8.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1708911 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1708911-tillers-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/79/75/77-og.jpg?w=100&h=66" width="100" height="66" alt="The Tillers" title="The Tillers" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1708911-tillers-chicago/">The Tillers</a></h1>
+					          <h2 class="dates">Sat 8/04</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-04T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1708911-tillers-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1708911" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $12.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1723105 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1723105-echo-courts-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/95/78/74-og.jpg?w=100&h=100" width="100" height="100" alt="Echo Courts" title="Echo Courts" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1723105-echo-courts-chicago/">Echo Courts</a></h1>
+					  <h2 class="supports description"><a href=" /event/1723105-echo-courts-chicago/ ">Power Haunts, Girl K</a></h2>        <h2 class="dates">Sun 8/05</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-05T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1723105-echo-courts-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1723105" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $8.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1725296 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1725296-sadies-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/96/25/49-og.jpg?w=100&h=39" width="100" height="39" alt="The Sadies" title="The Sadies" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1725296-sadies-chicago/">The Sadies</a></h1>
+					          <h2 class="dates">Mon 8/06</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-06T19:00:00-05:00"></span>7:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1725296-sadies-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1725296" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $15.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1725534 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1725534-weeds-poetry-open-mic-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/61/57/17-og.jpg?w=100&h=100" width="100" height="100" alt="Weeds Poetry Open Mic" title="Weeds Poetry Open Mic" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1725534-weeds-poetry-open-mic-chicago/">Weeds Poetry Open Mic</a></h1>
+					          <h2 class="dates">Mon 8/06</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-06T21:30:00-05:00"></span>9:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1725534-weeds-poetry-open-mic-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 Donations welcome       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1725539 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1725539-first-tuesdays-mick-ben-chicago/"><img src="https://image-ticketfly.imgix.net/00/00/94/89/59-og.jpg?w=100&h=75" width="100" height="75" alt="First Tuesdays with Mick &amp; Ben" title="First Tuesdays with Mick &amp; Ben" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1725539-first-tuesdays-mick-ben-chicago/">First Tuesdays with Mick & Ben</a></h1>
+					          <h2 class="dates">Tue 8/07</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-07T18:30:00-05:00"></span>6:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1725539-first-tuesdays-mick-ben-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1725539" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $5.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1718026 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1718026-hideout-veggie-bingo-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/90/09/91-og.jpg?w=100&h=133" width="100" height="133" alt="Hideout Veggie Bingo" title="Hideout Veggie Bingo" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1718026-hideout-veggie-bingo-chicago/">Hideout Veggie Bingo</a></h1>
+					  <h2 class="supports description"><a href=" /event/1718026-hideout-veggie-bingo-chicago/ ">Hermitage Street Community Garden of Englewood</a></h2>        <h2 class="dates">Wed 8/08</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-08T17:30:00-05:00"></span>5:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1718026-hideout-veggie-bingo-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 Cards are $4 each, or 3 for $10       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1725544 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1725544-devil-in-woodpile-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/87/29/00-og.jpg?w=100&h=154" width="100" height="154" alt="Devil In A Woodpile" title="Devil In A Woodpile" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1725544-devil-in-woodpile-chicago/">Devil In A Woodpile</a></h1>
+					          <h2 class="dates">Thu 8/09</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-09T18:00:00-05:00"></span>6:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1725544-devil-in-woodpile-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 $5 at the Door       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1717898 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1717898-timmy-teeth-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/94/92/43-og.jpg?w=100&h=100" width="100" height="100" alt="Timmy The Teeth" title="Timmy The Teeth" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1717898-timmy-teeth-chicago/">Timmy The Teeth</a></h1>
+					  <h2 class="supports description"><a href=" /event/1717898-timmy-teeth-chicago/ ">The Family Gold</a></h2>        <h2 class="dates">Thu 8/09</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-09T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1717898-timmy-teeth-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1717898" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $8.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1721966 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1721966-blueberry-tour-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/96/06/60-og.jpg?w=100&h=147" width="100" height="147" alt="The BlueBerry Tour" title="The BlueBerry Tour" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1721966-blueberry-tour-chicago/">The BlueBerry Tour</a></h1>
+					  <h2 class="supports description"><a href=" /event/1721966-blueberry-tour-chicago/ ">Joe Pera, Conner O'Malley, Dan Licata</a></h2>        <h2 class="dates">Fri 8/10</h2>
+              <h2 class="times">
+  <span class="doors">Doors: 8:00 pm</span> / <span class="start dtstart"><span class="value-title" title="2018-08-10T20:30:00-05:00"></span>Show: 8:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1721966-blueberry-tour-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+<h3 class="sold-out">Sold Out</h3>       <h3 class="price-range">
+			 $15.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1725553 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1725553-blueberry-tour-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/96/06/60-og.jpg?w=100&h=147" width="100" height="147" alt="The BlueBerry Tour" title="The BlueBerry Tour" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1725553-blueberry-tour-chicago/">The BlueBerry Tour</a></h1>
+					  <h2 class="supports description"><a href=" /event/1725553-blueberry-tour-chicago/ ">Joe Pera, Conner O'Malley, Dan Licata</a></h2>        <h2 class="dates">Fri 8/10</h2>
+              <h2 class="times">
+  <span class="doors">Doors: 10:00 pm</span> / <span class="start dtstart"><span class="value-title" title="2018-08-10T22:30:00-05:00"></span>Show: 10:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1725553-blueberry-tour-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1725553" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $15.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1725527 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1725527-slide-show-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/90/46/76-og.jpg?w=100&h=125" width="100" height="125" alt="Slide Show" title="Slide Show" /></a>
+      <div class="list-view-details vevent">
+<h1 class="headliners summary"><a href="/event/1725527-slide-show-chicago/">Slide Show</a></h1>        <h2 class="dates">Mon 8/13</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-13T19:00:00-05:00"></span>7:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1725527-slide-show-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1725527" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $7.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1725535 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1725535-weeds-poetry-open-mic-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/61/57/17-og.jpg?w=100&h=100" width="100" height="100" alt="Weeds Poetry Open Mic" title="Weeds Poetry Open Mic" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1725535-weeds-poetry-open-mic-chicago/">Weeds Poetry Open Mic</a></h1>
+					          <h2 class="dates">Mon 8/13</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-13T21:30:00-05:00"></span>9:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1725535-weeds-poetry-open-mic-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 Donations welcome       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1725540 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1725540-scientist-walks-into-bar-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/85/34/87-og.jpg?w=100&h=100" width="100" height="100" alt="A Scientist Walks into a Bar" title="A Scientist Walks into a Bar" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1725540-scientist-walks-into-bar-chicago/">A Scientist Walks into a Bar</a></h1>
+					          <h2 class="dates">Tue 8/14</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-14T18:30:00-05:00"></span>6:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1725540-scientist-walks-into-bar-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1725540" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $5.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1718028 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1718028-hideout-veggie-bingo-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/90/09/91-og.jpg?w=100&h=133" width="100" height="133" alt="Hideout Veggie Bingo" title="Hideout Veggie Bingo" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">NeighborSpace, The Hideout, and Soup & Bread present:</h2><h1 class="headliners summary"><a href="/event/1718028-hideout-veggie-bingo-chicago/">Hideout Veggie Bingo</a></h1><h2 class="supports description"><a href=" /event/1718028-hideout-veggie-bingo-chicago/ ">Bill MacKay & Ryley Walker, Children's Garden of Hope of Humboldt Park</a></h2>        <h2 class="dates">Wed 8/15</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-15T17:30:00-05:00"></span>5:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1718028-hideout-veggie-bingo-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 Cards are $4 each, or 3 for $10       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1713111 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1713111-free-cake-for-every-creature-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/94/36/78-og.jpg?w=100&h=67" width="100" height="67" alt="Free Cake For Every Creature" title="Free Cake For Every Creature" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1713111-free-cake-for-every-creature-chicago/">Free Cake For Every Creature</a></h1>
+					  <h2 class="supports description"><a href=" /event/1713111-free-cake-for-every-creature-chicago/ ">Amy O, Emily Jane Powers</a></h2>        <h2 class="dates">Wed 8/15</h2>
+              <h2 class="times">
+  <span class="doors">Doors: 9:00 pm</span> / <span class="start dtstart"><span class="value-title" title="2018-08-15T21:00:00-05:00"></span>Show: 9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1713111-free-cake-for-every-creature-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1713111" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $8.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1725545 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1725545-devil-in-woodpile-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/87/29/00-og.jpg?w=100&h=154" width="100" height="154" alt="Devil In A Woodpile" title="Devil In A Woodpile" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1725545-devil-in-woodpile-chicago/">Devil In A Woodpile</a></h1>
+					          <h2 class="dates">Thu 8/16</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-16T18:00:00-05:00"></span>6:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1725545-devil-in-woodpile-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 $5 at the Door       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1718489 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1718489-minor-moon-single-release-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/43/51/99-og.jpg?w=100&h=66" width="100" height="66" alt="Minor Moon (Single Release), Angela James, S.M. Wolf" title="Minor Moon (Single Release), Angela James, S.M. Wolf" /></a>
+      <div class="list-view-details vevent">
+<h1 class="headliners summary"><a href="/event/1718489-minor-moon-single-release-chicago/">Minor Moon (Single Release), Angela James, S.M. Wolf</a></h1>        <h2 class="dates">Fri 8/17</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-17T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1718489-minor-moon-single-release-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1718489" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1704850 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1704850-jon-stickley-trio-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/92/54/57-og.jpg?w=100&h=45" width="100" height="45" alt="Jon Stickley Trio" title="Jon Stickley Trio" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1704850-jon-stickley-trio-chicago/">Jon Stickley Trio</a></h1>
+					          <h2 class="dates">Sun 8/19</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-19T20:00:00-05:00"></span>8:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1704850-jon-stickley-trio-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1704850" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $12.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1722241 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1722241-brandon-wardell-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/90/46/76-og.jpg?w=100&h=125" width="100" height="125" alt="Brandon Wardell" title="Brandon Wardell" /></a>
+      <div class="list-view-details vevent">
+<h1 class="headliners summary"><a href="/event/1722241-brandon-wardell-chicago/">Brandon Wardell</a></h1>        <h2 class="dates">Mon 8/20</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-20T19:00:00-05:00"></span>7:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1722241-brandon-wardell-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1722241" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1725536 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1725536-weeds-poetry-open-mic-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/61/57/17-og.jpg?w=100&h=100" width="100" height="100" alt="Weeds Poetry Open Mic" title="Weeds Poetry Open Mic" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1725536-weeds-poetry-open-mic-chicago/">Weeds Poetry Open Mic</a></h1>
+					          <h2 class="dates">Mon 8/20</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-20T21:30:00-05:00"></span>9:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1725536-weeds-poetry-open-mic-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 Donations welcome       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1718029 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1718029-hideout-veggie-bingo-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/90/09/91-og.jpg?w=100&h=133" width="100" height="133" alt="Hideout Veggie Bingo" title="Hideout Veggie Bingo" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1718029-hideout-veggie-bingo-chicago/">Hideout Veggie Bingo</a></h1>
+					  <h2 class="supports description"><a href=" /event/1718029-hideout-veggie-bingo-chicago/ ">Jon Langford & Martin Billeheimer, Slow Food Chicago's Preserve Garden of North Lawndale</a></h2>        <h2 class="dates">Wed 8/22</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-22T17:30:00-05:00"></span>5:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1718029-hideout-veggie-bingo-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 Cards are $4 each, or 3 for $10       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1716723 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1716723-mcluhan-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/94/70/44-og.jpg?w=100&h=147" width="100" height="147" alt="McLuhan" title="McLuhan" /></a>
+      <div class="list-view-details vevent">
+<h2 class="topline-info">The Secret History of Chicago Music Presents:</h2> <h1 class="headliners summary"><a href="/event/1716723-mcluhan-chicago/">McLuhan</a></h1>
+					  <h2 class="supports description"><a href=" /event/1716723-mcluhan-chicago/ ">Crown Larks, Junegrass</a></h2>        <h2 class="dates">Wed 8/22</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-22T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1716723-mcluhan-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1716723" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1725546 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1725546-devil-in-woodpile-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/87/29/00-og.jpg?w=100&h=154" width="100" height="154" alt="Devil In A Woodpile" title="Devil In A Woodpile" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1725546-devil-in-woodpile-chicago/">Devil In A Woodpile</a></h1>
+					          <h2 class="dates">Thu 8/23</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-23T18:00:00-05:00"></span>6:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1725546-devil-in-woodpile-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 $5 at the Door       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1725532 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1725532-hideout-stand-up-showcase-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/90/46/76-og.jpg?w=100&h=125" width="100" height="125" alt="Hideout Stand-Up Showcase" title="Hideout Stand-Up Showcase" /></a>
+      <div class="list-view-details vevent">
+<h1 class="headliners summary"><a href="/event/1725532-hideout-stand-up-showcase-chicago/">Hideout Stand-Up Showcase</a></h1>        <h2 class="dates">Mon 8/27</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-27T19:00:00-05:00"></span>7:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1725532-hideout-stand-up-showcase-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1725532" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $7.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1725537 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1725537-weeds-poetry-open-mic-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/61/57/17-og.jpg?w=100&h=100" width="100" height="100" alt="Weeds Poetry Open Mic" title="Weeds Poetry Open Mic" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1725537-weeds-poetry-open-mic-chicago/">Weeds Poetry Open Mic</a></h1>
+					          <h2 class="dates">Mon 8/27</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-27T21:30:00-05:00"></span>9:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1725537-weeds-poetry-open-mic-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 Donations welcome       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1706848 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1706848-girl-talk-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/88/11/87-og.jpg?w=100&h=100" width="100" height="100" alt="The Girl Talk" title="The Girl Talk" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1706848-girl-talk-chicago/">The Girl Talk</a></h1>
+					          <h2 class="dates">Tue 8/28</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-28T18:30:00-05:00"></span>6:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1706848-girl-talk-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1706848" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $5.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1718030 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1718030-hideout-veggie-bingo-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/90/09/91-og.jpg?w=100&h=133" width="100" height="133" alt="Hideout Veggie Bingo" title="Hideout Veggie Bingo" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1718030-hideout-veggie-bingo-chicago/">Hideout Veggie Bingo</a></h1>
+					  <h2 class="supports description"><a href=" /event/1718030-hideout-veggie-bingo-chicago/ ">Amy Gard, Laura Ann, and Marie, Las Semillas de Justicia Community Garden of Little Village</a></h2>        <h2 class="dates">Wed 8/29</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-29T17:30:00-05:00"></span>5:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1718030-hideout-veggie-bingo-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 Cards are $4 each, or 3 for $10       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1725547 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1725547-devil-in-woodpile-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/87/29/00-og.jpg?w=100&h=154" width="100" height="154" alt="Devil In A Woodpile" title="Devil In A Woodpile" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1725547-devil-in-woodpile-chicago/">Devil In A Woodpile</a></h1>
+					          <h2 class="dates">Thu 8/30</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-08-30T18:00:00-05:00"></span>6:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1725547-devil-in-woodpile-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 $5 at the Door       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1718031 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1718031-hideout-veggie-bingo-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/90/09/91-og.jpg?w=100&h=133" width="100" height="133" alt="Hideout Veggie Bingo" title="Hideout Veggie Bingo" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1718031-hideout-veggie-bingo-chicago/">Hideout Veggie Bingo</a></h1>
+					  <h2 class="supports description"><a href=" /event/1718031-hideout-veggie-bingo-chicago/ ">Montrose Metra Community Gardens of Ravenswood</a></h2>        <h2 class="dates">Wed 9/05</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-09-05T17:30:00-05:00"></span>5:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1718031-hideout-veggie-bingo-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 Cards are $4 each, or 3 for $10       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1723120 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1723120-co-founder-diagonal-black-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/95/78/96-og.jpg?w=100&h=100" width="100" height="100" alt="Co Founder, Diagonal, Black Glass" title="Co Founder, Diagonal, Black Glass" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1723120-co-founder-diagonal-black-chicago/">Co Founder</a></h1>
+					   <h1 class="headliners"><a href="/event/1723120-co-founder-diagonal-black-chicago/">Diagonal</a></h1>
+					   <h1 class="headliners"><a href="/event/1723120-co-founder-diagonal-black-chicago/">Black Glass</a></h1>
+					          <h2 class="dates">Wed 9/05</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-09-05T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1723120-co-founder-diagonal-black-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1723120" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $8.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1718032 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1718032-hideout-veggie-bingo-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/90/09/91-og.jpg?w=100&h=133" width="100" height="133" alt="Hideout Veggie Bingo" title="Hideout Veggie Bingo" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1718032-hideout-veggie-bingo-chicago/">Hideout Veggie Bingo</a></h1>
+					  <h2 class="supports description"><a href=" /event/1718032-hideout-veggie-bingo-chicago/ ">El Paseo, Xochiquetzal, Mariposa, and La Huerta Roots and Rays Community Gardens</a></h2>        <h2 class="dates">Wed 9/12</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-09-12T17:30:00-05:00"></span>5:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1718032-hideout-veggie-bingo-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 Cards are $4 each, or 3 for $10       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1704846 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1704846-jd-wilkes-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/95/80/02-og.png?w=94&h=167" width="94" height="167" alt="JD Wilkes" title="JD Wilkes" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1704846-jd-wilkes-chicago/">JD Wilkes</a></h1>
+					          <h2 class="dates">Thu 9/13</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-09-13T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1704846-jd-wilkes-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1704846" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $12.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1722030 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1722030-yawpers-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/64/79/58-og.jpg?w=100&h=59" width="100" height="59" alt="The Yawpers" title="The Yawpers" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1722030-yawpers-chicago/">The Yawpers</a></h1>
+					          <h2 class="dates">Sat 9/15</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-09-15T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1722030-yawpers-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1722030" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $15.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1722034 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1722034-ava-luna-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/95/59/36-og.jpg?w=100&h=74" width="100" height="74" alt="Ava Luna" title="Ava Luna" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1722034-ava-luna-chicago/">Ava Luna</a></h1>
+					          <h2 class="dates">Sun 9/16</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-09-16T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1722034-ava-luna-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1722034" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $12.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1718033 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1718033-hideout-veggie-bingo-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/90/09/91-og.jpg?w=100&h=133" width="100" height="133" alt="Hideout Veggie Bingo" title="Hideout Veggie Bingo" /></a>
+      <div class="list-view-details vevent">
+<h1 class="headliners summary"><a href="/event/1718033-hideout-veggie-bingo-chicago/">Hideout Veggie Bingo</a></h1><h2 class="supports description"><a href=" /event/1718033-hideout-veggie-bingo-chicago/ ">Sarah Sherman, Bronzeville Neighborhood Farm, Oscar Mayer Magnet School Garden Project</a></h2>        <h2 class="dates">Wed 9/19</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-09-19T17:30:00-05:00"></span>5:30 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1718033-hideout-veggie-bingo-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+       <h3 class="price-range">
+			 Cards are $4 each, or 3 for $10       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1717371 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1717371-guerilla-toss-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/95/75/73-og.jpg?w=100&h=73" width="100" height="73" alt="Guerilla Toss" title="Guerilla Toss" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1717371-guerilla-toss-chicago/">Guerilla Toss</a></h1>
+					          <h2 class="dates">Sat 9/22</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-09-22T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1717371-guerilla-toss-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1717371" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $12.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1706890 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1706890-paul-burch-jon-langford-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/92/91/72-og.jpg?w=100&h=70" width="100" height="70" alt="Paul Burch, Jon Langford" title="Paul Burch, Jon Langford" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1706890-paul-burch-jon-langford-chicago/">Paul Burch</a></h1>
+					   <h1 class="headliners"><a href="/event/1706890-paul-burch-jon-langford-chicago/">Jon Langford</a></h1>
+					          <h2 class="dates">Sun 9/23</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-09-23T20:00:00-05:00"></span>8:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1706890-paul-burch-jon-langford-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1706890" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1714131 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1714131-courtney-marie-andrews-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/94/22/48-og.jpg?w=100&h=100" width="100" height="100" alt="Courtney Marie Andrews" title="Courtney Marie Andrews" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1714131-courtney-marie-andrews-chicago/">Courtney Marie Andrews</a></h1>
+					  <h2 class="supports description"><a href=" /event/1714131-courtney-marie-andrews-chicago/ ">David Huckfelt (The Pines)</a></h2>        <h2 class="dates">Tue 9/25</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-09-25T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1714131-courtney-marie-andrews-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1714131" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $12.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1717655 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1717655-sean-rowe-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/94/88/31-og.jpg?w=100&h=66" width="100" height="66" alt="Sean Rowe" title="Sean Rowe" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1717655-sean-rowe-chicago/">Sean Rowe</a></h1>
+					          <h2 class="dates">Sat 9/29</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-09-29T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1717655-sean-rowe-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1717655" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $15.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1712546 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1712546-traed-graes-och-stenar-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/93/93/92-og.jpg?w=100&h=41" width="100" height="41" alt="Träd, Gräs Och Stenar, Endless Boogie" title="Träd, Gräs Och Stenar, Endless Boogie" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1712546-traed-graes-och-stenar-chicago/">Träd, Gräs Och Stenar</a></h1>
+					   <h1 class="headliners"><a href="/event/1712546-traed-graes-och-stenar-chicago/">Endless Boogie</a></h1>
+					          <h2 class="dates">Thu 10/04</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-10-04T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1712546-traed-graes-och-stenar-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1712546" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $20.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1722966 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1722966-valley-queen-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/95/75/96-og.jpg?w=100&h=68" width="100" height="68" alt="Valley Queen" title="Valley Queen" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1722966-valley-queen-chicago/">Valley Queen</a></h1>
+					          <h2 class="dates">Wed 10/10</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-10-10T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1722966-valley-queen-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1722966" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item tfly-event-id-1707237 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1707237-eric-bachmann-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/92/97/96-og.jpg?w=100&h=67" width="100" height="67" alt="Eric Bachmann" title="Eric Bachmann" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1707237-eric-bachmann-chicago/">Eric Bachmann</a></h1>
+					          <h2 class="dates">Sat 10/13</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-10-13T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1707237-eric-bachmann-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1707237" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $15.00       </h3>
+	      </div>
+    </div>
+    <div class="list-view-item alt tfly-event-id-1721744 tfly-org-id-345 tfly-venue-id-843">
+<a href="/event/1721744-advance-base-chicago/"><img src="https://image-ticketfly.imgix.net/00/02/95/54/15-og.jpg?w=100&h=100" width="100" height="100" alt="Advance Base" title="Advance Base" /></a>
+      <div class="list-view-details vevent">
+ <h1 class="headliners summary"><a href="/event/1721744-advance-base-chicago/">Advance Base</a></h1>
+					          <h2 class="dates">Wed 10/17</h2>
+              <h2 class="times">
+  <span class="start dtstart"><span class="value-title" title="2018-10-17T21:00:00-05:00"></span>9:00 pm</span> </h2>
+  
+  <h2 class="more-info"><a class="url" href="/event/1721744-advance-base-chicago/">More Info</a></h2>
+          </div>
+		<div class="ticket-price">
+                   <h3 class="ticket-link primary-link"><a class="tickets" href="https://www.ticketfly.com/purchase/event/1721744" onclick="return tfly_openWindowGA(this);" target="_blank">Tickets</a></h3>
+					       <h3 class="price-range">
+			 $10.00       </h3>
+	      </div>
+    </div>
+
+</div>
+
+
+				
+				
+			</div>
+
+		</div><!-- .post -->
+
+		
+	</div><!-- #content -->
+	
+
+	<div id="sidebar-1" class="floatright">
+
+		<ul class="sidebar-widgets">
+
+			<li id="text-9" class="widget widget_text">			<div class="textwidget"><div class="tfly-search ticketfly">
+<form method="get" id="searchform" action="/listing/">
+	<div>
+    	<input type="text" value="Enter an Artist or Event" onblur="if(this.value==''){this.value=this.defaultValue;}" onfocus="if(this.value==this.defaultValue){this.value='';}" class="textform" id="q" name="q"/>
+		<input type="submit" id="searchsubmit" value="Search" />
+	</div>
+</form>
+</div></div>
+		</li>
+<li id="text-12" class="widget widget_text">			<div class="textwidget"><form action="https://www.ticketfly.com/account/emailSignup?orgId=345" class="signup-form" method="post">
+<div class="mailing-list"">
+<p>subscribe to our weekly newsletter</p>
+		<input type="text" onfocus="if(this.value==this.defaultValue){this.value='';}" onblur="if(this.value==''){this.value=this.defaultValue;}" value="enter your email address" name="email" style="width:160px;"> <input type="submit" name="mysubmit" value="Submit">
+	</div>
+</div>
+		</li>
+		<li id="recent-posts-3" class="widget widget_recent_entries">		<h3 class='widgettitle'>News</h3>
+		<ul>
+					<li>
+				<a href="https://www.hideoutchicago.com/2018/05/24/chicago-tribune-sits-down-with-ester-to-talk-their-new-album-curtains/">Chicago Tribune sits down with Ester to talk their new album &#8220;Curtains&#8221;</a>
+						</li>
+					<li>
+				<a href="https://www.hideoutchicago.com/2018/05/22/jason-steins-locksmith-isidore-celebrate-the-release-of-after-caroline-at-the-hideout/">Jason Stein&#8217;s &#038; Locksmith Isidore celebrate the release of &#8220;After Caroline&#8221; at the Hideout</a>
+						</li>
+					<li>
+				<a href="https://www.hideoutchicago.com/2018/05/19/rolling-stone-talks-jim-lauderdale-and-his-latest-single-time-flies/">Rolling Stone Talks Jim Lauderdale and his latest single &#8220;Time Flies&#8221;</a>
+						</li>
+					<li>
+				<a href="https://www.hideoutchicago.com/2018/05/13/studs-terkels-birthdayradio-archive-launch-celebration-at-the-hideout/">Studs Terkels&#8217; Birthday/Radio Archive Launch Celebration at the Hideout</a>
+						</li>
+					<li>
+				<a href="https://www.hideoutchicago.com/2018/05/13/timeout-chicago-names-yonatan-gats-hideout-performance-one-of-mays-top-hits/">Timeout Chicago names Yonatan Gat&#8217;s Hideout Performance one of May&#8217;s top-hits</a>
+						</li>
+					<li>
+				<a href="https://www.hideoutchicago.com/2018/05/13/picnics-on-the-porch-summer-2018/">Picnics on the Porch Summer 2018</a>
+						</li>
+					<li>
+				<a href="https://www.hideoutchicago.com/2018/05/04/the-messthetics-hit-the-readers-best-in-the-city-list-this-weekend/">The Messthetics hit The Reader&#8217;s &#8220;Best in the City&#8221; list this weekend</a>
+						</li>
+				</ul>
+		</li>
+		<li id="twitter-2" class="widget widget_twitter"><div><h3 class='widgettitle'><span class='twitterwidget twitterwidget-title'>@hideoutchicago tweets</span></h3>
+<ul><li><span class='entry-content'>We're bringing some legends to the stage tonight----Martin Bisi brings ONO &amp; Mark Shippy to the stage to help comme… <a href="https://t.co/bmZAXynb7T">https://t.co/bmZAXynb7T</a></span> <span class='entry-meta'><span class='time-meta'><a href="http://twitter.com/hideoutchicago/statuses/1013871180187566080">about 1 hour ago</a></span> <span class='from-meta'>from <a href="https://about.twitter.com/products/tweetdeck" rel="nofollow">TweetDeck</a></span></span></li><li><span class='entry-content'>Monday-night comedy at the Hideout is back on tap tonight at 7:00pm w/ Domeheads Attack <a href="https://t.co/Uhhggmfkgr">https://t.co/Uhhggmfkgr</a></span> <span class='entry-meta'><span class='time-meta'><a href="http://twitter.com/hideoutchicago/statuses/1013852305236492289">about 2 hours ago</a></span> <span class='from-meta'>from <a href="https://about.twitter.com/products/tweetdeck" rel="nofollow">TweetDeck</a></span></span></li><li><span class='entry-content'>RT <a href="http://twitter.com/thvnderdomeshow" class="twitter-user">@thvnderdomeshow</a>: Tomorrow at 7:00 pm we attack <a href="http://twitter.com/hideoutchicago" class="twitter-user">@hideoutchicago</a>. Our weapon of choice?
+.
+.
+.
+...Comedy <a href="https://t.co/ppFGIiyw4D">https://t.co/ppFGIiyw4D</a></span> <span class='entry-meta'><span class='time-meta'><a href="http://twitter.com/hideoutchicago/statuses/1013810204864143360">about 5 hours ago</a></span> <span class='from-meta'>from <a href="https://about.twitter.com/products/tweetdeck" rel="nofollow">TweetDeck</a></span></span></li></ul></div></li>
+<li id="text-6" class="widget widget_text">			<div class="textwidget"><div>
+
+<div id="social-buttons">
+
+<div id="follow-legend">follow us</div>
+
+<div class="social-link"><a href="http://www.facebook.com/home.php#!/pages/Hideout-Inn/139096082092"><img src="http://hideoutchicago.ticketfly.com/files/2010/12/facebookButton2.png">facebook</a> </div>
+
+<div class="social-link"><a href="http://twitter.com/hideoutchicago"><img src="http://hideoutchicago.ticketfly.com/files/2010/12/twitterButton2.png">twitter</a> </div>
+
+<div class="social-link"><a href="http://www.youtube.com/channel/UCroy7z340VuZVTRQ5ZndSEQ"><img src="http://hideoutchicago.ticketfly.com/files/2012/11/youtube-icon-40.png">youtube</a> </div>
+
+</div></div>
+		</li>
+
+		</ul>
+
+	</div>
+
+</div>
+
+
+
+
+
+<div id="footer">
+		
+<center>The Hideout ® 1354 West Wabansia Chicago IL 60642<br />
+773.227.4433 info at hideoutchicago dot com</center>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://www.hideoutchicago.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.hideoutchicago.com/listing/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type='text/javascript' src='https://cdn.ticketfly.com/wp-content/plugins/wp-jquery-lightbox/jquery.touchwipe.min.js?ver=1.4.6'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var JQLBSettings = {"showTitle":"1","showCaption":"1","showNumbers":"1","fitToScreen":"0","resizeSpeed":"400","showDownload":"0","navbarOnTop":"0","marginSize":"0","slideshowSpeed":"4000","prevLinkTitle":"previous image","nextLinkTitle":"next image","closeTitle":"close image gallery","image":"Image ","of":" of ","download":"Download","pause":"(pause slideshow)","play":"(play slideshow)"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://cdn.ticketfly.com/wp-content/plugins/wp-jquery-lightbox/jquery.lightbox.min.js?ver=1.4.6'></script>
+<script type='text/javascript' src='https://cdn.ticketfly.com/wp-includes/js/wp-embed.min.js?ver=4.7.10'></script>
+
+<a href="https://www.ticketfly.com/"><img class="tfly-powered" src="https://cdn.ticketfly.com/files/2011/07/ticketfly-powered-badge-light-bg.png"></a>
+</div>
+ 
+</div><!-- #wrapper .hfeed -->
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"c165d52f09","applicationID":"31112467","transactionName":"NVRSMUBZWhVRBRBeXgwecQZGUVsIHxYFUFQ=","queueTime":0,"applicationTime":919,"atts":"GRNRRwhDSRs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+
