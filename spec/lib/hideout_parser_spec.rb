@@ -26,4 +26,13 @@ describe HideoutParser do
       "Damian Anaya"
     )
   end
+
+  it "does not parse 'Gone Fishin'" do
+    @hideout_content = File.read("spec/mocks/the_hideout.txt")
+    schedule = HideoutParser.new(@hideout_content).schedule
+
+    schedule.each do |show|
+      show[:headliner].should_not == "Gone Fishin'"
+    end
+  end
 end

@@ -26,6 +26,6 @@ class HideoutParser
       }
     end
 
-    shows
+    shows.reject {|s| s[:headliner] == "Gone Fishin'"}
   end
 end
