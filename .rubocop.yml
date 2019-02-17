@@ -1,12 +1,11 @@
 AllCops:
-  TargetRubyVersion: 2.5
+  TargetRubyVersion: 2.6
   Exclude:
     - "bin/**/*"
     - "db/**/*"
     - "sync/db/**/*"
     - "tmp/**/*"
     - "Capfile"
-    - "jira_ticket_maker.rb"
 
 Layout/AlignParameters:
   EnforcedStyle: with_fixed_indentation
@@ -64,9 +63,6 @@ Style/Documentation:
 
 Style/FrozenStringLiteralComment:
   Enabled: false
-
-Style/HashSyntax:
-  EnforcedStyle: hash_rockets
 
 Style/IfUnlessModifier:
   Enabled: false

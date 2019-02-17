@@ -17,12 +17,12 @@ class HideoutParser
       ticket_price = show.css("div.ticket-price h3.price-range").text.strip
 
       shows << {
-        :venue => "The Hideout",
-        :headliner => headliner,
-        :supporting_acts => supporting_acts,
-        :date_time => Date.parse(date_time),
-        :info => info,
-        :ticket_price => ticket_price,
+        venue: "The Hideout",
+        headliner: headliner,
+        supporting_acts: supporting_acts,
+        date_time: Date.parse(date_time),
+        info: info,
+        ticket_price: ticket_price,
       }
     end
 
