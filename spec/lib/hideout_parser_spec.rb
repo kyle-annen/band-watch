@@ -9,10 +9,10 @@ describe HideoutParser do
     first_show = content.schedule.first
 
     first_show.should include(
-      venue: "The Hideout",
-      headliner: "Domeheads Attack w/Alan Ford Giles",
-      info: "https://www.hideoutchicago.com/event/1706883-domeheads-attack-alan-ford-chicago/",
-      ticket_price: "$7.00",
+      :venue => "The Hideout",
+      :headliner => "Domeheads Attack w/Alan Ford Giles",
+      :info => "https://www.hideoutchicago.com/event/1706883-domeheads-attack-alan-ford-chicago/",
+      :ticket_price => "$7.00",
     )
 
     first_show[:supporting_acts].should include(
@@ -23,7 +23,7 @@ describe HideoutParser do
       "Aidan O'Connor",
       "Seth Arthur Johnson",
       "Laura Mulcahy",
-      "Damian Anaya"
+      "Damian Anaya",
     )
   end
 

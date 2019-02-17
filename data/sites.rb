@@ -1,5 +1,3 @@
-class Sites
-  def self.the_hideout
-    "https://www.hideoutchicago.com/"
-  end
+module Sites
+  THE_HIDEOUT = "https://www.hideoutchicago.com/".freeze
 end
