@@ -2,8 +2,11 @@ require "spec/spec_helper"
 require "lib/hideout_parser"
 
 describe HideoutParser do
+  before(:all) do
+    @hideout_content = File.read("spec/mocks/the_hideout.html")
+  end
+
   it "parses the content" do
-    @hideout_content = File.read("spec/mocks/the_hideout.txt")
     content = HideoutParser.new(@hideout_content)
 
     first_show = content.schedule.first
@@ -28,7 +31,6 @@ describe HideoutParser do
   end
 
   it "does not parse 'Gone Fishin'" do
-    @hideout_content = File.read("spec/mocks/the_hideout.txt")
     schedule = HideoutParser.new(@hideout_content).schedule
 
     schedule.each do |show|
